@@ -29,7 +29,7 @@ class TestGoodGraders:
         assert result == 2
 
     def test_find_no_good_graders(self, input_data: DataType) -> None:
-        data_without_one_hundred: DataType = {
+        data_without_good_graders: DataType = {
             "Студент1": [
                 ("предмет1", 61),
                 ("предмет2", 63),
@@ -40,6 +40,6 @@ class TestGoodGraders:
             ],
         }
 
-        finder = GoodGraders(data_without_one_hundred)
+        finder = GoodGraders(data_without_good_graders)
         result = finder.calc()
         assert result == 0
