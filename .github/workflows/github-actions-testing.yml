@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - modification1
+      - modification2
 
 jobs:
   build:
