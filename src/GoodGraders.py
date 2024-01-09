@@ -11,6 +11,6 @@ class GoodGraders:
         for student, subjects in self.data.items():
             all_good_graders = all(score >= 76 for _, score in subjects)
         
-        if all_good_graders:
-            count += 1
+            if all_good_graders:
+                count += 1
         return count
